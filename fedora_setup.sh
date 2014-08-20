@@ -11,5 +11,5 @@ for i in SWIG/_{ec,evp}.i; do
   sed -i -e "s/opensslconf\./opensslconf-${arch}\./" "$i"
 done
 
-SWIG_FEATURES=-cpperraswarn python setup.py $*
+SWIG_FEATURES=-cpperraswarn python2.7 setup.py $*
 
